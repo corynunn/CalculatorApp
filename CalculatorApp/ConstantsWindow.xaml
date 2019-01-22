@@ -1,0 +1,30 @@
+﻿<Window x:Class="CalculatorApp.ConstantsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorApp"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Constants Window" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="piButton" Content="π" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="80" FontSize="24" FontWeight="Bold" Click="piButton_Click"/>
+        <Button x:Name="eButton" Content="e" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="100" Height="80" FontSize="24" FontWeight="Bold" Click="eButton_Click"/>
+        <Button x:Name="square2Button" Content="√2" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="100" Height="80" FontSize="24" FontWeight="Bold" Click="square2Button_Click"/>
+        <Button x:Name="alphaButton" Content="α" HorizontalAlignment="Left" Margin="10,265,0,0" VerticalAlignment="Top" Width="100" Height="80" FontSize="24" FontWeight="Bold" Click="alphaButton_Click"/>
+        <Label x:Name="label" Content="Pi: 3.1416" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,31,0,0" FontSize="22"/>
+        <Label x:Name="label_Copy" Content="Euler's e: 2.71828" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,116,0,0" FontSize="22"/>
+        <Label x:Name="label_Copy1" Content="1.41421" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,201,0,0" FontSize="22"/>
+        <Label x:Name="label_Copy2" Content="Feigenbaum's α: 2.5029" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,286,0,0" FontSize="22"/>
+        <Button x:Name="deltaButton" Content="δ" HorizontalAlignment="Left" Margin="384,10,0,0" VerticalAlignment="Top" Width="100" Height="80" FontSize="24" FontWeight="Bold" Click="deltaButton_Click"/>
+        <Button x:Name="zetaButton" Content="ζ" HorizontalAlignment="Left" Margin="384,95,0,0" VerticalAlignment="Top" Width="100" Height="80" FontSize="24" FontWeight="Bold" Click="zetaButton_Click"/>
+        <Button x:Name="phiButton" Content="φ" HorizontalAlignment="Left" Margin="384,180,0,0" VerticalAlignment="Top" Width="100" Height="80" FontSize="24" FontWeight="Bold" Click="phiButton_Click"/>
+        <Button x:Name="gammaButton" Content="γ" HorizontalAlignment="Left" Margin="384,265,0,0" VerticalAlignment="Top" Width="100" Height="80" FontSize="24" FontWeight="Bold" Click="gammaButton_Click"/>
+        <Label x:Name="label_Copy3" Content="Feigenbaum's δ: 4.6692" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="497,31,0,0" FontSize="22"/>
+        <Label x:Name="label_Copy4" Content="Apéry's: 1.20206" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="497,116,0,0" FontSize="22"/>
+        <Label x:Name="label_Copy5" Content="Golden Ratio: 1.618" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="497,201,0,0" FontSize="22"/>
+        <Label x:Name="label_Copy6" Content="Euler–Mascheroni: 0.57721" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="497,286,0,0" FontSize="22"/>
+        <Button x:Name="cancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="684,356,0,0" VerticalAlignment="Top" Width="100" Height="55" FontSize="24" FontWeight="Bold" Click="cancelButton_Click"/>
+
+    </Grid>
+</Window>
