@@ -36,7 +36,7 @@ namespace CalculatorClassLibrary
                 case Expression.Divide:
                     if(NextToken.Evaluation() == 0)
                     {
-                        throw new RuntimeError();
+                        throw new RuntimeError("You attempted to divide by zero.");
                     }
                     value = PreviousToken.Evaluation() / NextToken.Evaluation();
                     break;

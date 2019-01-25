@@ -8,6 +8,10 @@ namespace CalculatorClassLibrary
 {
     public class RuntimeError: Exception
     {
-        public override string Message { get { return "Attempted to divide by zero."; } }
+        
+        public RuntimeError(string input) : base(input)
+        {
+
+        }
     }
 }

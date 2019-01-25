@@ -8,12 +8,11 @@ namespace CalculatorClassLibrary
 {
     public class SyntaxError: Exception
     {
-        string input;
-        public override string Message { get { return input; } }
+        
 
-        public SyntaxError(string input)
+        public SyntaxError(string input) : base(input)
         {
-            this.input = input;
+            
         }
     }
 }
