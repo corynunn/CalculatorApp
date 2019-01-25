@@ -225,7 +225,7 @@ namespace CalculatorClassLibrary
                     default:
                         if (!Int32.TryParse(currentChar.ToString(), out _) && currentChar != '.')
                         {
-                            throw new Exception("Invalid input: " + currentChar);
+                            throw new SyntaxError("Invalid input: " + currentChar);
                         }
                         break;
                 }

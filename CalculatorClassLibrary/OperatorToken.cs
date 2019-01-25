@@ -34,6 +34,10 @@ namespace CalculatorClassLibrary
                     value = PreviousToken.Evaluation() * NextToken.Evaluation();
                     break;
                 case Expression.Divide:
+                    if(NextToken.Evaluation() == 0)
+                    {
+                        throw new RuntimeError();
+                    }
                     value = PreviousToken.Evaluation() / NextToken.Evaluation();
                     break;
                 case Expression.Positive:
